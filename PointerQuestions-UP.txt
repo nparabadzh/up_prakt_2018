@@ -1,0 +1,142 @@
+Какво ще се изведе от всяка една от задачите:
+
+//За всяка считаме ,че имаме using namespace std;
+
+1.
+#include <iostream>
+int main()
+{
+	int i = 3;
+	int *j;
+	j = &i;
+	j++;
+	cout<<*j<<endl;
+	return 0;
+}
+
+A) 4
+B) Error
+C) Some value
+D) Address
+
+2.
+#include<iostream
+#include<string.h>
+int main()
+{
+	char *ptr = "hello";
+	char a[22];
+	*ptr = "world";
+	cout<<*ptr<<a<<endl;
+	return 0;
+}
+
+A) hello Address
+B) world Address
+C) hello world
+D) Error
+
+3.
+#include<iostream>
+int main()
+{
+	char *ptr = "helloworld";
+	cout<<(ptr + 4)<<endl;
+	return 0;
+}
+
+A) world
+B) oworld
+C) world h
+D) hello
+
+4.
+#include<iostream>
+int main()
+{
+	char *ptr = "The cake is a lie!";
+	cout<<*&*ptr<<endl;
+	return 0;
+}
+
+A) Address of T
+B) Error
+C) T
+D) Address of ptr
+
+5.
+#include<iostream>
+int main()
+{
+	int *ptr, b;
+	b = sizeof(ptr);
+	cout<<b<<endl;
+	return 0;
+}
+
+A) 4
+B) 2
+C) Error
+D) Address of b
+
+6.
+#include<iostream>
+int main()
+{
+	int a = 25, b;
+	int *ptr, *ptr1;
+	ptr = &a;
+	ptr1 = &b;
+	b = 36;
+	cout<<*ptr<<*ptr1<<endl;
+	return 0;
+}
+
+A) 25 354375
+B) Error
+C) 25 36
+D) 36 25
+
+7.
+#include<iostream>
+int main()
+{
+	int * ptr ;
+	cout<<sizeof(ptr)<<endl;
+	return 0;
+}
+
+A) 4
+B) 8
+C) Depends
+D) Error
+
+8.
+#include<iostream>
+int main()
+{
+	int *ptr = 2;
+	cout<<sizeof(ptr)<<endl;
+	return 0;
+}
+
+A) 8
+B) 4
+C) Error
+D) Depends
+
+9.
+#include<iostream>
+int main()
+{
+	int a = 36;
+	int *ptr;
+	ptr = &a;
+	cout<<*&ptr <<&*ptr<<endl;
+	return 0;
+}
+
+A) Address Value
+B) Value Address
+C) Address Address
+D) Value Value
