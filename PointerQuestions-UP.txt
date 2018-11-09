@@ -1,6 +1,6 @@
-Какво ще се изведе от всяка една от задачите:
+What will be the output of each of these programmes:
 
-//За всяка считаме ,че имаме using namespace std;
+//We could assume we have using namespace std; before each main()
 
 1.
 #include <iostream>
