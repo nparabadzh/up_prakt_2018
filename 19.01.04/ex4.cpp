@@ -62,5 +62,12 @@ int main()
 		}
 	}
 
-	cout << ex4(matrix, n, m) << endl;;
+	cout << ex4(matrix, n, m) << endl;
+
+	for (unsigned i = 0; i < n; ++i)
+	{
+		delete[] matrix[i];
+	}
+	
+	delete[] matrix;
 }
